@@ -2,8 +2,8 @@ CmdUtils.makeSearchCommand
 (
     {
         name: "jira search",
-        icon: "http://jira.mcclatchyinteractive.com/favicon.ico",
-        url: "http://jira.mcclatchyinteractive.com/sr/jira.issueviews:searchrequest-printable/temp/SearchRequest.html?query={QUERY}&summary=true&description=true&body=true&tempMax=1000",
+        icon: "http://staff.webassign.net/jira/favicon.ico",
+        url: "http://staff.webassign.net/jira/sr/jira.issueviews:searchrequest-printable/temp/SearchRequest.html?query={QUERY}&summary=true&description=true&body=true&tempMax=1000",
         parser:
         {
             container: "table.#issuetable",

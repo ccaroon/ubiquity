@@ -2,23 +2,23 @@ CmdUtils.CreateCommand
 (
     {
         names: ["jira"],
-        icon: "http://jira.mcclatchyinteractive.com/favicon.ico",
+        icon: "http://staff.webassign.net/jira/favicon.ico",
         arguments: [{role: 'object', nountype: noun_arb_text}],
         _link: function jira_link(jkey, type)
         {
             if (jkey.match(/^\d+$/))
             {
-                jkey = "MIDEV-"+jkey;
+                jkey = "YETI-"+jkey;
             }
             
-            var url = "http://jira.mcclatchyinteractive.com/browse/"+jkey;
+            var url = "http://staff.webassign.net/jira/browse/"+jkey;
             if (type == 'xml')
             {
-                url = "http://jira.mcclatchyinteractive.com/si/jira.issueviews:issue-xml/"+jkey+"/"+jkey+".xml";
+                url = "http://staff.webassign.net/jira/si/jira.issueviews:issue-xml/"+jkey+"/"+jkey+".xml";
             }
             else
             {
-                url = "http://jira.mcclatchyinteractive.com/browse/"+jkey;
+                url = "http://staff.webassign.net/jira/browse/"+jkey;
             }
 
             return (url);
