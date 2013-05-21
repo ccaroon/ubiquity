@@ -2,7 +2,7 @@ CmdUtils.CreateCommand
 (
     {
         names: ["jira"],
-        icon: "http://staff.webassign.net/jira/favicon.ico",
+        icon: "https://staff.webassign.net/jira/favicon.ico",
         arguments: [{role: 'object', nountype: noun_arb_text}],
         _link: function jira_link(jkey, type)
         {
@@ -11,14 +11,14 @@ CmdUtils.CreateCommand
                 jkey = "YETI-"+jkey;
             }
             
-            var url = "http://staff.webassign.net/jira/browse/"+jkey;
+            var url = "http://webassign.atlassian.net/browse/"+jkey;
             if (type == 'xml')
             {
-                url = "http://staff.webassign.net/jira/si/jira.issueviews:issue-xml/"+jkey+"/"+jkey+".xml";
+                url = "http://webassign.atlassian.net/si/jira.issueviews:issue-xml/"+jkey+"/"+jkey+".xml";
             }
             else
             {
-                url = "http://staff.webassign.net/jira/browse/"+jkey;
+                url = "http://webassign.atlassian.net/browse/"+jkey;
             }
 
             return (url);
